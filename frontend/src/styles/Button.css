@@ -1,0 +1,17 @@
+.btn {
+background: rgba(13, 163, 255, 0.84);
+border-radius: 32px;
+border-style: none;
+
+}
+
+.btn-primary {
+  background-color: #0DA3FFD6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0DA3FF1A;
+  color: #0DA3FFD6;
+}
+
