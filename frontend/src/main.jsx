@@ -13,6 +13,7 @@ createRoot(document.getElementById('root')).render(
     </div>
     <NavBar />
     <Header />
+    <h2 className="card-container-h2">Наши услуги</h2>
     <ServicesGrid />
     
   </StrictMode>,
