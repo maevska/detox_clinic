@@ -7,11 +7,11 @@ const Card = ({ image, title, description, price }) => {
     <section className="card-section">
         <div className="card-background">
             <img src={image} alt={title} className="image-card" />
-            <h3 className="card-title">{title}</h3>
+            <h2 className="card-title">{title}</h2>
             <p className="card-description">{description}</p>
         <div className="card-footer">
             <p className="card-price">от {price} ₽</p>
-            <Button text="Начать лечение" />
+            <Button text="Начать лечение"  className="button-cards"/>
         </div>
         </div>
     </section>

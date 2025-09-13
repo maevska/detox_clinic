@@ -4,6 +4,8 @@ import './index.css'
 import NavBar from './components/NavBar'
 import Header from './components/Header'
 import ServicesGrid from "./components/ServicesGrid"
+import Steps from "./components/Steps"
+import InformClinic from "./components/InformClinic"
 
 
 createRoot(document.getElementById('root')).render(
@@ -15,6 +17,8 @@ createRoot(document.getElementById('root')).render(
     <Header />
     <h2 className="card-container-h2">Наши услуги</h2>
     <ServicesGrid />
+    <Steps />
+    <InformClinic />
     
   </StrictMode>,
 )
