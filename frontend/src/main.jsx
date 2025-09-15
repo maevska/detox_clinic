@@ -7,6 +7,7 @@ import ServicesGrid from "./components/ServicesGrid"
 import Steps from "./components/Steps"
 import InformClinic from "./components/InformClinic"
 import Staff from './components/Staff'
+import Advantages from './components/Advantages'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
     <Steps />
     <InformClinic />
     <Staff />
+    <Advantages />
     
   </StrictMode>,
 )

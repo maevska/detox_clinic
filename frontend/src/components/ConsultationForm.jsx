@@ -1,9 +1,9 @@
 import "../styles/ConsultationForm.css";
 import Button from "../components/Button";
 
-const ConsultationForm = ({ formsTitle, chaptersform, buttonText, warning }) => {
+const ConsultationForm = ({ formsTitle, chaptersform, buttonText, warning, className = "" }) => {
     return (
-        <div className="container-form">
+        <div className={`container-form ${className}`}>
             <div className="headerform">
                 <h2 className="form-h2">{formsTitle}</h2>
                 <p className="parag-form">{chaptersform}</p>
