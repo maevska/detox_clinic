@@ -6,7 +6,7 @@ import Header from './components/Header'
 import ServicesGrid from "./components/ServicesGrid"
 import Steps from "./components/Steps"
 import InformClinic from "./components/InformClinic"
-
+import Staff from './components/Staff'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     <ServicesGrid />
     <Steps />
     <InformClinic />
+    <Staff />
     
   </StrictMode>,
 )
