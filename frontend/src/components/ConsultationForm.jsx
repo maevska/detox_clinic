@@ -6,7 +6,7 @@ const ConsultationForm = ({ formsTitle, chaptersform, buttonText, warning, class
         <div className={`container-form ${className}`}>
             <div className="headerform">
                 <h2 className="form-h2">{formsTitle}</h2>
-                <p className="parag-form">{chaptersform}</p>
+                {chaptersform && <p className="parag-form">{chaptersform}</p>}
             </div>
             <form action="" className="Forms">
                 <input type="text" className="form-input" placeholder="Ваше имя" />
