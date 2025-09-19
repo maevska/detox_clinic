@@ -1,0 +1,102 @@
+.rewiew-section {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 100px;
+}
+
+.rewiew-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1350px;
+}
+
+.rewiew-h2 {
+  margin-left: 100px;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+.rewiews-controls button {
+  background: #0da3ff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.rewiews-controls button:hover {
+  background: #007bff;
+}
+
+.rewiew-content {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.rewiew-cards {
+  position: relative;
+  margin-top: 10px;
+  width: 590px;
+  height: 355px;
+  background-color: #f1f8fd;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.rewiew-cards::before {
+  content: "“";
+  position: absolute;
+  right: 25px;
+  font-size: 70px;
+  color: #0da3ff;
+  line-height: 0.6;
+  opacity: 0.9;
+}
+
+.rewiew-content-cards {
+  height: 230px;
+  margin: 30px;
+}
+
+.rewiew-h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.rewiew-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.rewiew-data {
+  position: relative;
+  margin: 30px;
+  padding-top: 5px;
+}
+
+.rewiew-data::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid #ddebf4;
+}
+
+.rewiew-data-p {
+  color: #7192a9;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}

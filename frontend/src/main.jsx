@@ -9,6 +9,7 @@ import InformClinic from "./components/InformClinic"
 import Staff from './components/Staff'
 import Advantages from './components/Advantages'
 import QnAList from './components/QnAList'
+import Rewiews from './components/Reviews'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
     <Staff />
     <Advantages />
     <QnAList />
+    <Rewiews />
     
   </StrictMode>,
 )
