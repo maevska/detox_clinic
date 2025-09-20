@@ -10,6 +10,7 @@ import Staff from './components/Staff'
 import Advantages from './components/Advantages'
 import QnAList from './components/QnAList'
 import Rewiews from './components/Reviews'
+import Footer from './components/Footer'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -26,6 +27,7 @@ createRoot(document.getElementById('root')).render(
     <Advantages />
     <QnAList />
     <Rewiews />
+    <Footer />
     
   </StrictMode>,
 )
