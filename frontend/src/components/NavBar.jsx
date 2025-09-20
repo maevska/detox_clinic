@@ -4,7 +4,11 @@ import Button from "../components/Button";
 import ConsultationForm from "../components/ConsultationForm";
 import Modal from "../components/Modal";
 
-const NavBar = () => {
+const NavBar = ({onServicesClick,
+    onStepsClick,
+    onClinicClick,
+    onReviewsClick,
+    onContactsClick}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
@@ -16,11 +20,11 @@ const NavBar = () => {
                     </div>
                     <div className="navbar-menu">
                         <ul className="menu-list">
-                            <li>Услуги</li>
-                            <li>Этапы лечения</li>
-                            <li>О нас</li>
-                            <li>Отзывы</li>
-                            <li>Контакты</li>
+                            <li onClick={onServicesClick}>Услуги</li>
+                            <li onClick={onStepsClick}>Этапы лечения</li>
+                            <li onClick={onClinicClick}>О нас</li>
+                            <li onClick={onReviewsClick}>Отзывы</li>
+                            <li onClick={onContactsClick}>Контакты</li>
                         </ul>
                     </div>
                     <div className="navbar-contacts">
@@ -36,7 +40,7 @@ const NavBar = () => {
             </nav>
 
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-                <ConsultationForm 
+                <ConsultationForm
                     formsTitle="Заказать звонок"
                     chaptersform="Просто оставьте заявку и мы вам перезвоним в ближайшее время"
                     buttonText="Отправить"
