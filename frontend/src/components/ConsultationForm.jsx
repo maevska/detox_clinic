@@ -1,7 +1,7 @@
 import "../styles/ConsultationForm.css";
 import Button from "../components/Button";
 
-const ConsultationForm = ({ formsTitle, chaptersform, buttonText, warning, className = "" }) => {
+const ConsultationForm = ({ formsTitle, chaptersform, buttonText, warning, className = "", onClose }) => {
     return (
         <div className={`container-form ${className}`}>
             <div className="headerform">
@@ -24,6 +24,7 @@ const ConsultationForm = ({ formsTitle, chaptersform, buttonText, warning, class
                         });
                         if (res.ok) {
                             window.alert("Спасибо за заявку! Скоро с вами свяжется наш специалист.");
+                            if (onClose) onClose();
                         } else {
                             window.alert("Ошибка при отправке формы. Проверьте правильность данных и попробуйте ещё раз.");
                         }

@@ -4,11 +4,11 @@ import Button from "../components/Button";
 import ConsultationForm from "../components/ConsultationForm";
 import Modal from "../components/Modal";
 
-const NavBar = ({onServicesClick,
+const NavBar = ({ onServicesClick,
     onStepsClick,
     onClinicClick,
     onReviewsClick,
-    onContactsClick}) => {
+    onContactsClick }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
@@ -45,6 +45,7 @@ const NavBar = ({onServicesClick,
                     chaptersform="Просто оставьте заявку и мы вам перезвоним в ближайшее время"
                     buttonText="Отправить"
                     warning='Нажимая кнопку "Получить консультацию", вы соглашаетесь с политикой конфиденциальности'
+                    onClose={() => setIsModalOpen(false)}
                 />
             </Modal>
         </>
